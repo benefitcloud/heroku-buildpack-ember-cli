@@ -190,8 +190,8 @@ fi
 
 PATH=$build_dir/node_modules/bower/bin:$PATH
 
-status "Pruning cached bower dependencies not specified in bower.json"
-bower prune 2>&1 | indent
+# status "Pruning cached bower dependencies not specified in bower.json"
+# bower prune 2>&1 | indent
 
 bower install --quiet | indent
 
